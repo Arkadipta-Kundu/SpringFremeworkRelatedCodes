@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean class="org.arkadipta.autowire.usingxml.Laptop" name="laptop">
+            <property name="brand" value="acer"/>
+            <property name="modelName" value="aspire 7"/>
+        </bean>
+
+    <bean class="org.arkadipta.autowire.usingxml.Coder" name="coder1" autowire="byName">
+        <property name="name" value="Arkadipta kundu"/>
+    </bean>
+</beans>
